@@ -52,7 +52,10 @@ p { margin: 0 0 1em; }
 .nav { display: flex; gap: 22px; margin-left: auto; }
 .nav a, .lang { color: var(--ink); text-decoration: none; font-size: 0.93rem; }
 .nav a:hover, .lang:hover { color: var(--accent); }
-.lang { font-weight: 600; }
+.lang { display: inline-flex; align-items: center; gap: 7px; font-weight: 600; font-size: 0.85rem; padding: 5px 11px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); }
+.lang:hover { border-color: var(--accent); }
+.lang-foot { display: inline-flex; align-items: center; gap: 7px; }
+.flag { width: 18px; height: 12px; border-radius: 2px; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.12); flex: none; object-fit: cover; }
 
 /* Sections */
 section { padding: 88px 0; }
